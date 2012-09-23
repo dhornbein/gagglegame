@@ -1,13 +1,171 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Bootstrap 101 Template</title>
+    <title>Gaggle Game {The Game for All Kinds of Smart}</title>
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
   </head>
   <body>
-    <h1>Hello, world!</h1>
-    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <header id="main" class="gaggle_bkg">
+        <div class="container">
+            <h1 class="title"><img src="img/main_title.png" alt="Gaggle"></h1>
+        </div>
+    </header>
+
+    <div class="navbar navbar-static-top navbar-inverse">
+        <div class="navbar-inner">
+            <div class="container">
+                <ul class="nav">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#game">The Game</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <ul class="nav pull-right">
+                    <li><a href="#"><i class="icon-shopping-cart icon-white"></i> Buy the Game</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+        <div class="hero-unit">
+            <div class="container">
+              <h1>Introducing Gaggle <small>The Game for All Kinds of Smart</small></h1>
+              
+              <p>We are currently in the process of launching our amazon marketplace.<br>
+    Soon you will be able to buy the game in the meantime,
+    follow us on twitter and like us on facebook!</p>
+              <p>
+                <a class="btn btn-primary btn-large">
+                  Buy the Game
+                </a>
+                <a class="btn btn-large">
+                  Learn more
+                </a>
+              </p>
+            </div>
+        </div>
+
+    <div id="home" class="container">
+
+        <div class="row">
+            <div class="span8">
+                <div class="page-header">
+                    <h1>Trivia for the rest of us</h1>
+                </div>
+                <p>Gaggle is a new kind of <strong>trivia game</strong> for all kinds of smart.</p>
+
+                <div class="tabbable">
+                  <ul class="nav nav-pills">
+                    <li><a href="#iq" data-toggle="pill">IQ</a></li>
+                    <li><a href="#socul" data-toggle="pill">Society and Culture</a></li>
+                    <li><a href="#ent" data-toggle="pill">Entertainment</a></li>
+                    <li><a href="#b2s" data-toggle="pill">Back 2 School</a></li>
+                    <li><a href="#bonus" data-toggle="pill">Bonus!</a></li>
+                  </ul>
+                  <div class="tab-content">
+                    <div class="tab-pane" id="iq">This is IQ</div>
+                    <div class="tab-pane" id="socul">This is Society and Culture</div>
+                    <div class="tab-pane" id="ent">This is Entertainment</div>
+                    <div class="tab-pane" id="b2s">This is Bonus!</div>
+                  </div>
+                </div>
+            </div>
+            <div class="span4">
+                <div class="well">
+                    <h3>Facebook</h3>
+                    <iframe id="facebook" src="http://www.facebook.com/plugins/likebox.php?id=114806888558913&amp;connections=30&amp;stream=true&amp;header=false&amp;height=555" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+                </div>
+            </div>
+                
+
+        </div> <!-- #main -->
+    </div> <!-- #home -->
+<hr>
+    <div id="about" class="main-container">
+        <div class="container">
+            <div class="page-header">
+                <div class="row">
+                  <div class="span2">
+                      <h1>About Us</h1>
+                  </div>
+                  <div class="span7">
+                      <p>Gaggle was founded by 2 brothers (David &amp; Sean) who wanted to create a game that was a little bit trivia and a little bit party game. The concept eventually grew to a crazy talented team that includes Drew, Lisa, Jake &amp; Nicole. We aim to redefine the traditional trivia game.</p>
+                  </div>
+                </div>
+            </div>
+
+            <div class="row">
+              <div class="span2 offset1">
+                  <img src="http://placehold.it/170x200" alt="">
+                  <h3>David</h3>
+                  <p>Is the founder and chief question maker-upper. When not
+working on Gaggle, he can be seen jogging the streets of NYC or
+spending time with friends and family. How does David Gaggle... Trivia.</p>
+              </div>
+              <div class="span2">
+                  <img src="http://placehold.it/170x200" alt="">
+                  <h3>Sean</h3>
+                  <p>Is the co-founder and marketing guru. When not working on
+Gaggle, you can find him on the golf course practicing his swing. How
+does Sean Gaggle... Entertainment.</p>
+              </div>
+              <div class="span2">
+                  <img src="http://placehold.it/170x200" alt="">
+                  <h3>Lisa</h3>
+                  <p>is the one who likes the words... and the phrasing... and the
+punctuation. She usually can be found messing about in Hoboken, NJ.
+How does Lisa Gaggle ... Nogically.</p>
+              </div>
+              <div class="span2">
+                  <img src="http://placehold.it/170x200" alt="">
+                  <h3>Drew</h3>
+                  <p>Is a designer and child of the web generation. When he isn't
+setting type on Gaggle cards or coding HTML he is being mysterious.
+How does Drew Gaggle... Logic.</p>
+              </div>
+              <div class="span2">
+                  <img src="http://placehold.it/170x200" alt="">
+                  <h3>Nicole</h3>
+                  <p>Is the art director/designer/constructor of all things tangible in
+the world of Gaggle. When she's not gaggling, Nicole can usually be
+found making books, or at the beach....though never far from the
+internet. How does Nicole Gaggle? Bonus of course!</p>
+              </div>
+            </div>
+        </div> <!-- #main -->
+    </div> <!-- #about -->
+<hr>
+    <div id="game" class="main-container">
+        <div class="main wrapper clearfix">
+
+            <article>
+                <header>
+                    <h2>How do YOU Gaggle? Are you a <img src="" alt="book"> worm? Are you a <img src="" alt="brainiac">? Whatever your niche, Gaggle is the game for you! Play Gaggle at a party, or at Family game night, Its always time to Gaggle!
+
+                </header>
+            </article>
+
+            <aside>
+            </aside>
+
+        </div> <!-- #main -->
+    </div> <!-- #page -->
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.2.min.js"><\/script>')</script>
+
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+        var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+        (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+        g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+        s.parentNode.insertBefore(g,s)}(document,'script'));
+    </script>
   </body>
 </html>
