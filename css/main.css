@@ -28,24 +28,97 @@ Font Face
 
 h1,h2,h3,h4,h5,h6 { font-family: "museo", sans-serif; }
 
+.aligncenter {text-align: center;}
+.alignleft {text-align: left;}
+.alignright {text-align: right;}
+
 .socul { color:#20419A; }
-.socul_bkg { background-color:#20419A; }
+.socul_bkg { background-color:#20419A; color:white; }
 .ent { color:#00A774; }
-.ent_bkg { background-color:#00A774; }
+.ent_bkg { background-color:#00A774; color:white; }
 .bonus { color:#F9C606; }
-.bonus_bkg { background-color:#F9C606; }
+.bonus_bkg { background-color:#F9C606; color:white; }
 .back2school { color:#E82C2E; }
-.back2school_bkg { background-color:#E82C2E; }
+.back2school_bkg { background-color:#E82C2E; color:white; }
 .iq { color:#8E3193; }
-.iq_bkg { background-color:#8E3193; }
+.iq_bkg { background-color:#8E3193; color:white; }
 /*.gaggle { color:#4DC4CF; }
 .gaggle_bkg { background-color:#4DC4CF; }*/
 .gaggle { color:#00C4CE; }
 .gaggle_bkg { background-color:#00C4CE; }
 
+.buyNowBtn {}
+.buyNowBtn img{
+  -webkit-transition-duration: 0.8s;
+  -moz-transition-duration: 0.8s;
+  -o-transition-duration: 0.8s;
+  transition-duration: 0.8s;
+   
+  -webkit-transition-property: -webkit-transform;
+  -moz-transition-property: -moz-transform;
+  -o-transition-property: -o-transform;
+  transition-property: transform;
+}
+.buyNowBtn:hover img { 
+  -webkit-transform:rotate(360deg);
+  -moz-transform:rotate(360deg);
+  -o-transform:rotate(360deg);
+}
+
+.section { padding-top:40px; }
+
+/*/////////////////////////////////////////////////
+Gaggle Icons
+/////////////////////////////////////////////////*/
+
+.g_icon {
+  background-image: url("../img/gaggle_icons_40px.png");
+  border-style:solid;
+  border-width: 10px;
+  border-radius: 10px 10px 10px 10px;
+  display: block;
+  height: 39px;
+  overflow: hidden;
+  text-indent: -50000px;
+  width: 39px;
+}
+
+.g_icon.i-iq { background-color:#8E3193; border-color:#8E3193; background-position:40px -40px ; }
+.g_icon.i-socul { background-color:#20419A; border-color:#20419A; background-position:-40px -40px ; }
+.g_icon.i-ent { background-color:#00A774; border-color:#00A774; background-position:0 -40px ; }
+.g_icon.i-b2s { background-color:#E82C2E; border-color:#E82C2E; background-position:-120px -38px ; }
+.g_icon.i-bonus { background-color:#F9C606; border-color:#F9C606; background-position:-80px -40px ; }
+
+/*/////////////////////////////////////////////////
+Gaggle cards
+/////////////////////////////////////////////////*/
+
+.card {
+  color:white;
+  border-radius: 10px 10px 10px 10px;
+  padding-bottom:10px;
+  width: 270px;
+}
+.card .g_icon{ float: left; }
+.card .cardDetails { margin-left: 60px; }
+.card .cardDetails .title { margin:0; }
+.card .question { background-color: white; border-radius: 10px; color:#222; margin:10px; min-height: 200px; padding:10px;}
+.card .cardBtn { margin-top:10px; }
+.card .category {}
+
+.card-socul { background-color:#20419A; }
+.card-iq { background-color:#8E3193; }
+
 /*/////////////////////////////////////////////////
 navigation
 /////////////////////////////////////////////////*/
+
+#navWrapper { height:41px; width:100%; }
+
+.navbar.affix { top:0; }
+.navbar .brand img { height:20px; }
+
+.navbar .menuBtn { float:left; padding:7px 10px 5px; }
 
 .navbar-inverse {
   color: #F27FFF;
@@ -81,7 +154,42 @@ navigation
 }
 
 /*/////////////////////////////////////////////////
+Hero
+/////////////////////////////////////////////////*/
+
+#hero {
+  background: url("../img/background_rainbow_icons.png") repeat scroll center top #FAFAFA;
+  border-bottom: 1px solid #DDDDDD;
+}
+
+#hero .container {
+  background-color: rgba(255, 255, 255, 0.85);
+}
+
+/*/////////////////////////////////////////////////
 Facebook widget
 /////////////////////////////////////////////////*/
 
 #facebook { background-color:#FFF; width:100%; height: 555px; }
+
+/*/////////////////////////////////////////////////
+Responsive Overwrite
+/////////////////////////////////////////////////*/
+
+@media (max-width: 767px) {
+  body {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .navbar-fixed-top,
+  .navbar-fixed-bottom,
+  .navbar-static-top {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .title { text-align: center; }
+
+  .container { padding-left:20px; padding-right: 20px; }
+}

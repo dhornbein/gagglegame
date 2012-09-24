@@ -3,8 +3,8 @@
   <head>
     <title>Gaggle Game {The Game for All Kinds of Smart}</title>
     <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
   </head>
   <body>
@@ -14,78 +14,191 @@
         </div>
     </header>
 
-    <div class="navbar navbar-static-top navbar-inverse">
-        <div class="navbar-inner">
-            <div class="container">
-                <ul class="nav">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#game">The Game</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-                <ul class="nav pull-right">
-                    <li><a href="#"><i class="icon-shopping-cart icon-white"></i> Buy the Game</a></li>
-                </ul>
-            </div>
-        </div>
+    <div id="navWrapper">
+      <div class="navbar navbar-static-top navbar-inverse" data-spy="affix" data-offset-top="138">
+          <div class="navbar-inner">
+              <div class="container">
+
+                   
+                  <!-- Be sure to leave the brand out there if you want it shown -->
+                  <a class="brand" href="./"><img src="img/gaggle_g_40px.png" alt="G"></a>
+
+                  <ul class="nav pull-right">
+                      <li><a href="#"><i class="icon-shopping-cart icon-white"></i> Buy the Game</a></li>
+                  </ul>
+                  
+                  <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+                  <a class="btn btn-navbar menuBtn" data-toggle="collapse" data-target=".nav-collapse">Menu <i class="icon-chevron-down icon-white"></i></a>
+                   
+                  <!-- Everything you want hidden at 940px or less, place within here -->
+                  <div class="nav-collapse">
+                    <ul class="nav">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#game">The Game</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
     </div>
 
 
-        <div class="hero-unit">
-            <div class="container">
-              <h1>Introducing Gaggle <small>The Game for All Kinds of Smart</small></h1>
-              
-              <p>We are currently in the process of launching our amazon marketplace.<br>
-    Soon you will be able to buy the game in the meantime,
-    follow us on twitter and like us on facebook!</p>
-              <p>
-                <a class="btn btn-primary btn-large">
-                  Buy the Game
-                </a>
-                <a class="btn btn-large">
-                  Learn more
-                </a>
-              </p>
-            </div>
+    <div id="hero" class="hero-unit">
+        <div class="container">
+          <div class="span8">
+            <h1>Introducing Gaggle<br><small>The Game for All Kinds of Smart</small></h1>
+            
+            <p>We are currently in the process of launching our amazon marketplace.<br>
+                Soon you will be able to buy the game in the meantime,
+                follow us on twitter and like us on facebook!</p>
+            <p>
+              <a class="btn btn-large">
+                Learn more
+              </a>
+            </p>
+          </div>
+          <div class="span3"><a href="#buy" class="buyNowBtn"><img src="img/gaggle_buy_now.png" alt="Buy Now!"></a></div>
         </div>
+    </div>
 
-    <div id="home" class="container">
+    <div id="home" class="section">
 
-        <div class="row">
-            <div class="span8">
-                <div class="page-header">
-                    <h1>Trivia for the rest of us</h1>
-                </div>
-                <p>Gaggle is a new kind of <strong>trivia game</strong> for all kinds of smart.</p>
-
-                <div class="tabbable">
-                  <ul class="nav nav-pills">
-                    <li><a href="#iq" data-toggle="pill">IQ</a></li>
-                    <li><a href="#socul" data-toggle="pill">Society and Culture</a></li>
-                    <li><a href="#ent" data-toggle="pill">Entertainment</a></li>
-                    <li><a href="#b2s" data-toggle="pill">Back 2 School</a></li>
-                    <li><a href="#bonus" data-toggle="pill">Bonus!</a></li>
-                  </ul>
-                  <div class="tab-content">
-                    <div class="tab-pane" id="iq">This is IQ</div>
-                    <div class="tab-pane" id="socul">This is Society and Culture</div>
-                    <div class="tab-pane" id="ent">This is Entertainment</div>
-                    <div class="tab-pane" id="b2s">This is Bonus!</div>
+        <div class="container">
+          <div class="row">
+              <div class="span8">
+                  <div class="page-header">
+                      <h1>Trivia for the rest of us</h1>
                   </div>
-                </div>
-            </div>
-            <div class="span4">
-                <div class="well">
-                    <h3>Facebook</h3>
-                    <iframe id="facebook" src="http://www.facebook.com/plugins/likebox.php?id=114806888558913&amp;connections=30&amp;stream=true&amp;header=false&amp;height=555" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
-                </div>
-            </div>
-                
+                  <p>Gaggle is a new kind of <strong>trivia game</strong> for all kinds of smart.</p>
+          
+                  <div class="tabbable">
+                    <!-- <ul class="nav nav-pills">
+                      <li><a href="#iq" data-toggle="pill">IQ</a></li>
+                      <li><a href="#socul" data-toggle="pill">Society and Culture</a></li>
+                      <li><a href="#ent" data-toggle="pill">Entertainment</a></li>
+                      <li><a href="#b2s" data-toggle="pill">Back 2 School</a></li>
+                      <li><a href="#bonus" data-toggle="pill">Bonus!</a></li>
+                    </ul> -->
+          
+                    <div class="row">
+                      <div class="span1"><a class="g_icon i-iq " href="#iq" data-toggle="pill">IQ</a></div>
+                      <div class="span1"><a class="g_icon i-socul" href="#socul" data-toggle="pill">Society and Culture</a></div>
+                      <div class="span1"><a class="g_icon i-ent" href="#ent" data-toggle="pill">Entertainment</a></div>
+                      <div class="span1"><a class="g_icon i-b2s" href="#b2s" data-toggle="pill">Back 2 School</a></div>
+                      <div class="span1"><a class="g_icon i-bonus" href="#bonus" data-toggle="pill">Bonus!</a></div>
+                    </div>
 
-        </div> <!-- #main -->
+                    <hr>
+
+                    <div class="tab-content">
+                      <div class="tab-pane active" id="basic">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                      </div>
+                      <div class="tab-pane" id="iq">This is IQ</div>
+                      <div class="tab-pane" id="socul">This is Society and Culture</div>
+                      <div class="tab-pane" id="ent">This is Entertainment</div>
+                      <div class="tab-pane" id="b2s">This is Bonus!</div>
+                    </div>
+                  </div>
+              </div>
+              <div class="span4">
+                  <div class="well">
+                      <h3>Facebook</h3>
+                      <iframe id="facebook" src="http://www.facebook.com/plugins/likebox.php?id=114806888558913&amp;connections=30&amp;stream=true&amp;header=false&amp;height=555" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+                  </div>
+              </div> 
+          
+          </div> <!-- .row -->
+        </div>
     </div> <!-- #home -->
 <hr>
-    <div id="about" class="main-container">
+    <div id="cards" class="section">
+        <div class="container">
+          
+          <div class="row">
+            <div class="card card-socul span2">
+              <div class="g_icon i-socul"></div>
+              <div class="cardDetails">
+                <h3 class="title">Trivia</h3>
+                <p>description</p>
+              </div>
+              <div class="question">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip
+              <div class="cardBtn aligncenter">
+                <a class="btn" href="#question1" role="button" class="btn" data-toggle="modal"><i class="icon-share-alt"></i> Answer</a>
+              </div>
+              </div>
+              <div class="category">
+                <h4 class="aligncenter">Society and Culture</h4>
+              </div>
+            </div>
+
+            <div class="card card-iq span2">
+              <div class="g_icon i-iq"></div>
+              <div class="cardDetails">
+                <h3 class="title">Trivia</h3>
+                <p>description</p>
+              </div>
+              <div class="question">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip
+              <div class="cardBtn aligncenter">
+                <a class="btn" href="#question2" role="button" class="btn" data-toggle="modal"><i class="icon-share-alt"></i> Answer</a>
+              </div>
+              </div>
+              <div class="category">
+                <h4 class="aligncenter">Society and Culture</h4>
+              </div>
+            </div>
+          </div> <!-- /row -->
+                 
+            <!-- Modals -->
+            <div class="modal hide" id="question1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+              <div class="modal-header socul_bkg">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h3 id="myModalLabel">Trivia</h3>
+              </div>
+              <div class="modal-body">
+                <p><strong>Question:</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
+                <p><strong>Answer:</strong> Labore et dolore</p>
+              </div>
+              <div class="modal-footer">
+                <a class="btn btn-primary" href=""><img src="https://dev.twitter.com/sites/default/files/images_documentation/bird_blue_16.png" alt=""> Twitter</a> <a class="btn btn-primary" href="">Facebook</a> <a class="btn btn-primary" href="">Google+</a>
+                <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+              </div>
+            </div>
+
+            <div class="modal hide" id="question2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+              <div class="modal-header iq_bkg">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h3 id="myModalLabel">Trivia</h3>
+              </div>
+              <div class="modal-body">
+                <p><strong>Question:</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
+                <p><strong>Answer:</strong> Labore et dolore</p>
+              </div>
+              <div class="modal-footer">
+                <a class="btn btn-primary" href=""><img src="https://dev.twitter.com/sites/default/files/images_documentation/bird_blue_16.png" alt=""> Twitter</a> <a class="btn btn-primary" href="">Facebook</a> <a class="btn btn-primary" href="">Google+</a>
+                <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+              </div>
+            </div>
+          </div> <!-- /container -->
+
+    </div>
+<hr>
+    <div id="about" class="section">
         <div class="container">
             <div class="page-header">
                 <div class="row">
