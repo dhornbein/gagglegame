@@ -110,6 +110,63 @@ Gaggle cards
 .card-iq { background-color:#8E3193; }
 
 /*/////////////////////////////////////////////////
+header
+/////////////////////////////////////////////////*/
+
+.social { margin-top:10px; }
+
+.social .shareBtn {
+  display: inline-block;
+  width:37px;
+  height: 37px;
+  text-indent: -5000px;
+}
+.social .shareBtn.facebook { background-image: url(../img/social/facebook2.png); }
+.social .shareBtn.google { background-image: url(../img/social/google-plus2.png); }
+.social .shareBtn.twitter { background-image: url(../img/social/twitter2.png); }
+.social .shareBtn.reddit { background-image: url(../img/social/reddit2.png); }
+
+.social .shareBtn.facebook:hover { background-image: url(../img/social/facebook.png); }
+.social .shareBtn.google:hover { background-image: url(../img/social/google-plus.png); }
+.social .shareBtn.twitter:hover { background-image: url(../img/social/twitter.png); }
+.social .shareBtn.reddit:hover { background-image: url(../img/social/reddit.png); }
+
+.tweet {
+  background-color: #FFFFFF;
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
+  float: left;
+  margin-top: 10px;
+  padding: 10px;
+  position: relative;
+}
+
+.tweet .arrow {
+  border-color: transparent white transparent transparent;
+  border-style: solid;
+  border-width: 15px;
+  content: " ";
+  height: 0;
+  left: -29px;
+  position: absolute;
+  top: 20px;
+  width: 0;
+}
+
+.tweet .twitterCtrl {}
+.tweet .twitterCtrl .tweetBtn { background-repeat: no-repeat; background-position: left center; padding-left: 20px; }
+.tweet .twitterCtrl .retweet { background-image: url(https://si0.twimg.com/images/dev/cms/intents/icons/retweet.png); }
+.tweet .twitterCtrl .retweet:hover { background-image: url(https://si0.twimg.com/images/dev/cms/intents/icons/retweet_hover.png); }
+.tweet .twitterCtrl .retweet:active { background-image: url(https://si0.twimg.com/images/dev/cms/intents/icons/retweet_on.png); }
+.tweet .twitterCtrl .reply { background-image: url(https://si0.twimg.com/images/dev/cms/intents/icons/reply.png); }
+.tweet .twitterCtrl .reply:hover { background-image: url(https://si0.twimg.com/images/dev/cms/intents/icons/reply_hover.png); }
+.tweet .twitterCtrl .fav { background-image: url(https://si0.twimg.com/images/dev/cms/intents/icons/favorite.png); }
+.tweet .twitterCtrl .fav:hover { background-image: url(https://si0.twimg.com/images/dev/cms/intents/icons/favorite_hover.png); }
+.tweet .twitterCtrl .fav:active { background-image: url(https://si0.twimg.com/images/dev/cms/intents/icons/favorite_on.png); }
+
+
+
+/*/////////////////////////////////////////////////
 navigation
 /////////////////////////////////////////////////*/
 

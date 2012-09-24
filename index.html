@@ -10,7 +10,26 @@
   <body>
     <header id="main" class="gaggle_bkg">
         <div class="container">
-            <h1 class="title"><img src="img/main_title.png" alt="Gaggle"></h1>
+            <div class="row">
+              <h1 class="title span4"><img src="img/main_title.png" alt="Gaggle"></h1>
+              <div class="span8">
+                <div class="social">
+                  <a class="shareBtn facebook" href="#">Facebook</a>
+                  <a class="shareBtn twitter" href="#">Twitter</a>
+                  <a class="shareBtn google" href="#">Google+</a>
+                  <a class="shareBtn reddit" href="#">Reddit</a>
+                </div>
+                <div class="tweet">
+                  <div class="arrow"></div>
+                  <p>We are having a party, you should join</p>
+                  <div class="twitterCtrl">
+                    <a class="tweetBtn retweet" href="#">Retweet</a>
+                    <a class="tweetBtn reply" href="#">Reply</a>
+                    <a class="tweetBtn fav" href="#">Favorite</a>
+                  </div>
+                </div>
+              </div>
+            </div>
         </div>
     </header>
 
@@ -74,13 +93,6 @@
                   <p>Gaggle is a new kind of <strong>trivia game</strong> for all kinds of smart.</p>
           
                   <div class="tabbable">
-                    <!-- <ul class="nav nav-pills">
-                      <li><a href="#iq" data-toggle="pill">IQ</a></li>
-                      <li><a href="#socul" data-toggle="pill">Society and Culture</a></li>
-                      <li><a href="#ent" data-toggle="pill">Entertainment</a></li>
-                      <li><a href="#b2s" data-toggle="pill">Back 2 School</a></li>
-                      <li><a href="#bonus" data-toggle="pill">Bonus!</a></li>
-                    </ul> -->
           
                     <div class="row">
                       <div class="span1"><a class="g_icon i-iq " href="#iq" data-toggle="pill">IQ</a></div>
@@ -94,6 +106,7 @@
 
                     <div class="tab-content">
                       <div class="tab-pane active" id="basic">
+                        <h3>Select a Category above to learn more...</h3>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                         quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -101,10 +114,26 @@
                         cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
                         proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                       </div>
-                      <div class="tab-pane" id="iq">This is IQ</div>
-                      <div class="tab-pane" id="socul">This is Society and Culture</div>
-                      <div class="tab-pane" id="ent">This is Entertainment</div>
-                      <div class="tab-pane" id="b2s">This is Bonus!</div>
+                      <div class="tab-pane" id="iq">
+                        <h3>This is IQ</h3>
+                        <p>You think you have the brains to tackle these problems, don't think too fast! The answer might be a little more involved than your first guess.</p>
+                      </div>
+                      <div class="tab-pane" id="socul">
+                        <h3>Society &amp; Culture</h3>
+                        <p>You'll need a few stamps in your passport to excel here.</p>
+                      </div>
+                      <div class="tab-pane" id="ent">
+                        <h3>Entertainment</h3>
+                        <p>You live on the red carpet, spend an unhealthy amount of time at the big screen, and have seen all the best directors college films</p>
+                      </div>
+                      <div class="tab-pane" id="b2s">
+                        <h3>Back 2 School</h3>
+                        <p>Where you always top of your class? Good, because even though these questions are asked of 5th graders, you'll need to be on top of your game.</p>
+                      </div>
+                      <div class="tab-pane" id="bonus">
+                        <h3>Bonus</h3>
+                        <p>Ready to risk it all? Bonus questions rely on luck and skill. What will you wager</p>
+                      </div>
                     </div>
                   </div>
               </div>
@@ -272,7 +301,6 @@ internet. How does Nicole Gaggle? Bonus of course!</p>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.2.min.js"><\/script>')</script>
 
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/main.js"></script>
 
     <script>
         var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
