@@ -1,17 +1,24 @@
 <?php
 
-function questionCard($q,$a,$cat,$subCat){
+function questionCard($array){
+
+	$q = $array[0];
+	$a = $array[1];
+	$cat = $array[2];
+	$subCat = $array[3];
+
+	$target = "question_" . substr(md5($q), 0, 5);
 
 	$out = <<<EOD
-				<div class="card card-$cat span2">
+				<div class="card card-$cat">
           <div class="g_icon i-$cat"></div>
           <div class="cardDetails">
             <h3 class="title">$subCat</h3>
-            <p>description</p>
+            <p>Answer the question below.</p>
           </div>
           <div class="question">$q
           <div class="cardBtn aligncenter">
-            <a class="btn" href="#question2" role="button" class="btn" data-toggle="modal"><i class="icon-share-alt"></i> Answer</a>
+            <a class="btn" href="#$target" role="button" class="btn" data-toggle="modal"><i class="icon-share-alt"></i> Answer</a>
           </div>
           </div>
           <div class="category">
@@ -20,7 +27,7 @@ function questionCard($q,$a,$cat,$subCat){
         </div>
              
         <!-- Modals -->
-        <div class="modal hide" id="question1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal hide" id="$target" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
           <div class="modal-header {$cat}_bkg">
             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
             <h3 id="myModalLabel">$subCat</h3>

@@ -127,6 +127,17 @@ Gaggle Icons
 .g_iconBlock.i-b2s { background-color:#E82C2E; border-color:#E82C2E; }
 .g_iconBlock.i-bonus { background-color:#F9C606; border-color:#F9C606; }
 
+.g_icon.i-g {
+  background: url("../img/gaggle_g_40px.png") no-repeat scroll center center #00C4CE;
+  border:#00C4CE solid 10px;
+  border-radius: 10px;
+  display: block;
+  height: 39px;
+  overflow: hidden;
+  text-indent: -50000px;
+  vertical-align: middle;
+  width: 40px;
+}
 
 /*/////////////////////////////////////////////////
 Gaggle cards
@@ -147,6 +158,9 @@ Gaggle cards
 
 .card-socul { background-color:#20419A; }
 .card-iq { background-color:#8E3193; }
+.card-ent { background-color:#00A774; }
+.card-b2s { background-color:#E82C2E; }
+.card-bonus { background-color:#F9C606; }
 
 /*/////////////////////////////////////////////////
 header
@@ -154,21 +168,21 @@ header
 
 .social { margin-top:10px; }
 
-.social .shareBtn {
+.shareBtn {
   display: inline-block;
   width:37px;
   height: 37px;
   text-indent: -5000px;
 }
-.social .shareBtn.facebook { background-image: url(../img/social/facebook2.png); }
-.social .shareBtn.google { background-image: url(../img/social/google-plus2.png); }
-.social .shareBtn.twitter { background-image: url(../img/social/twitter2.png); }
-.social .shareBtn.reddit { background-image: url(../img/social/reddit2.png); }
+.shareBtn.facebook { background-image: url(../img/social/facebook2.png); }
+.shareBtn.google { background-image: url(../img/social/google-plus2.png); }
+.shareBtn.twitter { background-image: url(../img/social/twitter2.png); }
+.shareBtn.reddit { background-image: url(../img/social/reddit2.png); }
 
-.social .shareBtn.facebook:hover { background-image: url(../img/social/facebook.png); }
-.social .shareBtn.google:hover { background-image: url(../img/social/google-plus.png); }
-.social .shareBtn.twitter:hover { background-image: url(../img/social/twitter.png); }
-.social .shareBtn.reddit:hover { background-image: url(../img/social/reddit.png); }
+.shareBtn.facebook:hover { background-image: url(../img/social/facebook.png); }
+.shareBtn.google:hover { background-image: url(../img/social/google-plus.png); }
+.shareBtn.twitter:hover { background-image: url(../img/social/twitter.png); }
+.shareBtn.reddit:hover { background-image: url(../img/social/reddit.png); }
 
 .tweet {
   background-color: #FFFFFF;
@@ -278,14 +292,15 @@ Game tab
 
 #aboutGame .g_icon {
   margin-bottom: 5px;
-  -webkit-transition: all 1s ease-out;
-  -moz-transition: all 1s ease-out;
-  -o-transition: all 1s ease-out;
-  -ms-transition: all 1s ease-out;
-  transition: all 1s ease-out;
+  -webkit-transition: all .2s ease-out;
+  -moz-transition: all .2s ease-out;
+  -o-transition: all .2s ease-out;
+  -ms-transition: all .2s ease-out;
+  transition: all .2s ease-out;
 }
-#aboutGame .g_icon:hover
-#aboutGame .g_icon:active, { margin-left: 15px; }
+#aboutGame .g_icon:hover,
+#aboutGame .g_icon:focus,
+#aboutGame .g_icon:active { margin-left: 15px; }
 
 /*/////////////////////////////////////////////////
 Facebook widget
@@ -313,4 +328,7 @@ Responsive Overwrite
   .title { text-align: center; }
 
   .container { padding-left:20px; padding-right: 20px; }
+
+  #home .social { text-align: center; }
+  #home .tweet { display: none; }
 }

@@ -8,7 +8,25 @@ $questions = array(
     "7",
     "iq",
     "Trivia"
-    )
+    ),
+  'b2s' => array(
+    "What type of fish does Santiago battle in The Old Man and the Sea?",
+    "Marlin",
+    "b2s",
+    "Trivia"
+    ),
+  'socul' => array(
+    "In the 1990's cheddar was a slang word meaning what?",
+    "Money",
+    "socul",
+    "Trivia"
+    ),
+  'ent' => array(
+    "What is the nickname of the villain in Texas Chainsaw Massacre?",
+    "Leather Face",
+    "ent",
+    "Trivia"
+    ),
 );
 
 $q = $questions;
@@ -63,7 +81,7 @@ $q = $questions;
                   <a class="brand" href="./"><img src="img/gaggle_g_40px.png" alt="G"></a>
 
                   <ul class="nav pull-right">
-                      <li><a href="#"><i class="icon-shopping-cart icon-white"></i> Buy the Game</a></li>
+                    <li><a href="#"><i class="icon-shopping-cart icon-white"></i> Buy the Game</a></li>
                   </ul>
                   
                   <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
@@ -111,6 +129,7 @@ $q = $questions;
           <div class="row">
   
             <div id="aboutGame" class="span1">
+              <div><a class="g_icon i-g" href="#basic" data-toggle="pill">Gaggle</a></div>
               <div><a class="g_icon g_iconBlock i-iq " href="#iq" data-toggle="pill">IQ</a></div>
               <div><a class="g_icon g_iconBlock i-socul" href="#socul" data-toggle="pill">Society and Culture</a></div>
               <div><a class="g_icon g_iconBlock i-ent" href="#ent" data-toggle="pill">Entertainment</a></div>
@@ -120,35 +139,56 @@ $q = $questions;
 
             <div class=" span11 tab-content">
               <div class="tab-pane active" id="basic">
-                <h3>Select a Category above to learn more...</h3>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                <div class="span5">
+                  <h3>Select a Category from the left to learn more...</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+                <div class="span5"><img src="img/illustration/table.jpg" alt=""></div>
               </div>
               <div class="tab-pane" id="iq">
-                <h3>This is IQ</h3>
-                <p>You think you have the brains to tackle these problems, don't think too fast! The answer might be a little more involved than your first guess.</p>
+                <div class="span7">
+                  <h3>This is IQ</h3>
+                  <p>You think you have the brains to tackle these problems, don't think too fast! The answer might be a little more involved than your first guess.</p>
+                </div>
 
-                <?php echo questionCard($q['iq'][0],$q['iq'][1],$q['iq'][2],$q['iq'][3]); ?>
+                <div class="span3"><?php echo questionCard($q['iq']); ?></div>
               </div>
               <div class="tab-pane" id="socul">
+                <div class="span7">
                 <h3>Society &amp; Culture</h3>
                 <p>You'll need a few stamps in your passport to excel here.</p>
+                </div>
+
+                <div class="span3"><?php echo questionCard($q['socul']); ?></div>
               </div>
               <div class="tab-pane" id="ent">
+                <div class="span7">
                 <h3>Entertainment</h3>
                 <p>You live on the red carpet, spend an unhealthy amount of time at the big screen, and have seen all the best directors college films</p>
+                </div>
+
+                <div class="span3"><?php echo questionCard($q['ent']); ?></div>
               </div>
               <div class="tab-pane" id="b2s">
+                <div class="span7">
                 <h3>Back 2 School</h3>
                 <p>Where you always top of your class? Good, because even though these questions are asked of 5th graders, you'll need to be on top of your game.</p>
+                </div>
+
+                <div class="span3"><?php echo questionCard($q['b2s']); ?></div>
               </div>
               <div class="tab-pane" id="bonus">
+                <div class="span7">
                 <h3>Bonus</h3>
                 <p>Ready to risk it all? Bonus questions rely on luck and skill. What will you wager</p>
+                </div>
+
+                <div class="span3"><img src="img/illustration/triviaman.jpg" alt=""></div>
               </div>
             </div>
 
@@ -175,90 +215,11 @@ $q = $questions;
         </div>
     </div>
 <hr class="divider" style="background-position:center 40px;">
-    <div id="cards" class="section">
-        <div class="container">
-          
-          <div class="row">
-            <div class="card card-socul span2">
-              <div class="g_icon i-socul"></div>
-              <div class="cardDetails">
-                <h3 class="title">Trivia</h3>
-                <p>description</p>
-              </div>
-              <div class="question">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-              quis nostrud exercitation ullamco laboris nisi ut aliquip
-              <div class="cardBtn aligncenter">
-                <a class="btn" href="#question1" role="button" class="btn" data-toggle="modal"><i class="icon-share-alt"></i> Answer</a>
-              </div>
-              </div>
-              <div class="category">
-                <h4 class="aligncenter">Society and Culture</h4>
-              </div>
-            </div>
-
-            <div class="card card-iq span2">
-              <div class="g_icon i-iq"></div>
-              <div class="cardDetails">
-                <h3 class="title">Trivia</h3>
-                <p>description</p>
-              </div>
-              <div class="question">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-              quis nostrud exercitation ullamco laboris nisi ut aliquip
-              <div class="cardBtn aligncenter">
-                <a class="btn" href="#question2" role="button" class="btn" data-toggle="modal"><i class="icon-share-alt"></i> Answer</a>
-              </div>
-              </div>
-              <div class="category">
-                <h4 class="aligncenter">Society and Culture</h4>
-              </div>
-            </div>
-          </div> <!-- /row -->
-                 
-            <!-- Modals -->
-            <div class="modal hide" id="question1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-              <div class="modal-header socul_bkg">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <h3 id="myModalLabel">Trivia</h3>
-              </div>
-              <div class="modal-body">
-                <p><strong>Question:</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
-                <p><strong>Answer:</strong> Labore et dolore</p>
-              </div>
-              <div class="modal-footer">
-                <a class="btn btn-primary" href=""><img src="https://dev.twitter.com/sites/default/files/images_documentation/bird_blue_16.png" alt=""> Twitter</a> <a class="btn btn-primary" href="">Facebook</a> <a class="btn btn-primary" href="">Google+</a>
-                <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
-              </div>
-            </div>
-
-            <div class="modal hide" id="question2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-              <div class="modal-header iq_bkg">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <h3 id="myModalLabel">Trivia</h3>
-              </div>
-              <div class="modal-body">
-                <p><strong>Question:</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
-                <p><strong>Answer:</strong> Labore et dolore</p>
-              </div>
-              <div class="modal-footer">
-                <a class="btn btn-primary" href=""><img src="https://dev.twitter.com/sites/default/files/images_documentation/bird_blue_16.png" alt=""> Twitter</a> <a class="btn btn-primary" href="">Facebook</a> <a class="btn btn-primary" href="">Google+</a>
-                <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
-              </div>
-            </div>
-          </div> <!-- /container -->
-
-    </div>
-<hr class="divider" style="background-position:center 80px;">
     <div id="about" class="section">
         <div class="container">
             <div class="page-header">
                 <div class="row">
-                  <div class="span2">
+                  <div class="span3">
                       <h1>Who we are</h1>
                   </div>
                   <div class="span7">
@@ -268,37 +229,54 @@ $q = $questions;
             </div>
 
             <div class="row">
-              <div class="span2 offset1">
+              <div class="span4">
                   <img src="http://placehold.it/170x200" alt="">
                   <h3>David</h3>
                   <p>Is the founder and chief question maker-upper. When not
 working on Gaggle, he can be seen jogging the streets of NYC or
 spending time with friends and family. How does David Gaggle... Trivia.</p>
               </div>
-              <div class="span2">
+              <div class="span4">
                   <img src="http://placehold.it/170x200" alt="">
                   <h3>Sean</h3>
                   <p>Is the co-founder and marketing guru. When not working on
 Gaggle, you can find him on the golf course practicing his swing. How
 does Sean Gaggle... Entertainment.</p>
               </div>
-              <div class="span2">
+              <div class="span4">
                   <img src="http://placehold.it/170x200" alt="">
                   <h3>Lisa</h3>
                   <p>is the one who likes the words... and the phrasing... and the
 punctuation. She usually can be found messing about in Hoboken, NJ.
 How does Lisa Gaggle ... Nogically.</p>
               </div>
-              <div class="span2">
+            </div>
+            <div class="row">
+              <div class="span3">
                   <img src="http://placehold.it/170x200" alt="">
                   <h3>Drew</h3>
                   <p>Is a designer and child of the web generation. When he isn't
 setting type on Gaggle cards or coding HTML he is being mysterious.
 How does Drew Gaggle... Logic.</p>
               </div>
-              <div class="span2">
+              <div class="span3">
                   <img src="http://placehold.it/170x200" alt="">
                   <h3>Nicole</h3>
+                  <p>Is the art director/designer/constructor of all things tangible in
+the world of Gaggle. When she's not gaggling, Nicole can usually be
+found making books, or at the beach....though never far from the
+internet. How does Nicole Gaggle? Bonus of course!</p>
+              </div>
+              <div class="span3">
+                  <img src="http://placehold.it/170x200" alt="">
+                  <h3>Katy</h3>
+                  <p>Is a designer and child of the web generation. When he isn't
+setting type on Gaggle cards or coding HTML he is being mysterious.
+How does Drew Gaggle... Logic.</p>
+              </div>
+              <div class="span3">
+                  <img src="http://placehold.it/170x200" alt="">
+                  <h3>Jake</h3>
                   <p>Is the art director/designer/constructor of all things tangible in
 the world of Gaggle. When she's not gaggling, Nicole can usually be
 found making books, or at the beach....though never far from the
