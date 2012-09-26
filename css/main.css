@@ -79,21 +79,54 @@ Gaggle Icons
 
 .g_icon {
   background-image: url("../img/gaggle_icons_40px.png");
+  display: inline-block;
+  height: 39px;
+  overflow: hidden;
+  text-indent: -50000px;
+  vertical-align: middle;
+  width: 40px;
+}
+
+.g_icon.i-iq { background-position:40px -40px ; }
+.g_icon.i-socul { background-position:-40px -40px ; }
+.g_icon.i-ent { background-position:0 -40px ; }
+.g_icon.i-b2s { background-position:-120px -38px ; }
+.g_icon.i-bonus { background-position:-80px -40px ; }
+
+.g_icon.i-color.i-iq { background-position:40px 0 ; }
+.g_icon.i-color.i-socul { background-position:-40px 0 ; }
+.g_icon.i-color.i-ent { background-position:0 0 ; }
+.g_icon.i-color.i-b2s { background-position:-120px 0 ; }
+.g_icon.i-color.i-bonus { background-position:-80px 0 ; }
+
+.g_iconSmall {
+  background-image: url("../img/gaggle_icons_20px.png");
+  display: inline-block;
+  height: 20px;
+  overflow: hidden;
+  text-indent: -50000px;
+  width: 20px;
+}
+
+.g_iconSmall.i-iq { background-position:40px -40px ; }
+.g_iconSmall.i-socul { background-position:-40px -40px ; }
+.g_iconSmall.i-ent { background-position:0 -40px ; }
+.g_iconSmall.i-b2s { background-position:-120px -38px ; }
+.g_iconSmall.i-bonus { background-position:-80px -40px ; }
+
+.g_iconBlock { 
   border-style:solid;
   border-width: 10px;
   border-radius: 10px 10px 10px 10px;
   display: block;
-  height: 39px;
-  overflow: hidden;
-  text-indent: -50000px;
-  width: 39px;
 }
 
-.g_icon.i-iq { background-color:#8E3193; border-color:#8E3193; background-position:40px -40px ; }
-.g_icon.i-socul { background-color:#20419A; border-color:#20419A; background-position:-40px -40px ; }
-.g_icon.i-ent { background-color:#00A774; border-color:#00A774; background-position:0 -40px ; }
-.g_icon.i-b2s { background-color:#E82C2E; border-color:#E82C2E; background-position:-120px -38px ; }
-.g_icon.i-bonus { background-color:#F9C606; border-color:#F9C606; background-position:-80px -40px ; }
+.g_iconBlock.i-iq { background-color:#8E3193; border-color:#8E3193; }
+.g_iconBlock.i-socul { background-color:#20419A; border-color:#20419A; }
+.g_iconBlock.i-ent { background-color:#00A774; border-color:#00A774; }
+.g_iconBlock.i-b2s { background-color:#E82C2E; border-color:#E82C2E; }
+.g_iconBlock.i-bonus { background-color:#F9C606; border-color:#F9C606; }
+
 
 /*/////////////////////////////////////////////////
 Gaggle cards
@@ -105,7 +138,7 @@ Gaggle cards
   padding-bottom:10px;
   width: 270px;
 }
-.card .g_icon{ float: left; }
+.card .g_icon{ float: left; margin:10px; }
 .card .cardDetails { margin-left: 60px; }
 .card .cardDetails .title { margin:0; }
 .card .question { background-color: white; border-radius: 10px; color:#222; margin:10px; min-height: 200px; padding:10px;}
@@ -220,14 +253,39 @@ navigation
 Hero
 /////////////////////////////////////////////////*/
 
+.divider {
+  background: url("../img/background_rainbow_icons.png") repeat scroll center top #fff;
+  border:none;
+  height: 40px;
+  margin-top: 40px;
+  width: 100%;
+}
+
 #hero {
   background: url("../img/background_rainbow_icons.png") repeat scroll center top #FAFAFA;
   border-bottom: 1px solid #DDDDDD;
 }
 
 #hero .container {
-  background-color: rgba(255, 255, 255, 0.85);
+  background-color: rgba(255, 255, 255, 0.9);
 }
+
+/*/////////////////////////////////////////////////
+Game tab
+/////////////////////////////////////////////////*/
+
+#aboutGame {}
+
+#aboutGame .g_icon {
+  margin-bottom: 5px;
+  -webkit-transition: all 1s ease-out;
+  -moz-transition: all 1s ease-out;
+  -o-transition: all 1s ease-out;
+  -ms-transition: all 1s ease-out;
+  transition: all 1s ease-out;
+}
+#aboutGame .g_icon:hover
+#aboutGame .g_icon:active, { margin-left: 15px; }
 
 /*/////////////////////////////////////////////////
 Facebook widget

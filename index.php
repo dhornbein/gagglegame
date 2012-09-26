@@ -1,5 +1,25 @@
+<?php 
+
+include('inc/functions.inc.php'); 
+
+$questions = array(
+  'iq' => array(
+    "The greatest number of Mondays that can occur during the first 45 days of the year is what?",
+    "7",
+    "iq",
+    "Trivia"
+    )
+);
+
+$q = $questions;
+
+?>
+
 <!DOCTYPE html>
-<html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
   <head>
     <title>Gaggle Game {The Game for All Kinds of Smart}</title>
     <!-- Bootstrap -->
@@ -111,6 +131,8 @@
               <div class="tab-pane" id="iq">
                 <h3>This is IQ</h3>
                 <p>You think you have the brains to tackle these problems, don't think too fast! The answer might be a little more involved than your first guess.</p>
+
+                <?php echo questionCard($q['iq'][0],$q['iq'][1],$q['iq'][2],$q['iq'][3]); ?>
               </div>
               <div class="tab-pane" id="socul">
                 <h3>Society &amp; Culture</h3>
